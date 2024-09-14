@@ -15,14 +15,14 @@ const runCommand = command => {
 
 const repoName = process.argv[2];
 if (!repoName) {
-  console.error('Please provide a repository name.');
+  console.error('Please provide a file name.');
   process.exit(1);
 }
 
 const gitCheckoutCommand = `git clone --depth 1 https://github.com/isurueranga-98/ireact ${repoName}`;
 const installDepsCommand = `cd ${repoName} && npm install`;
 
-console.log(`Cloning the repository ${repoName}...`);
+console.log(`Cloning the ${repoName}...`);
 const checkedOut = runCommand(gitCheckoutCommand);
 if (!checkedOut) {
   process.exit(1);
@@ -35,4 +35,4 @@ if (!installDeps) {
 }
 
 console.log("Completed successfully!");
-console.log(`To start the project, run the following commands:\n cd ${repoName} && npm start`);
+console.log(`To start the project, run the following commands:\n cd ${repoName} \n npm start`);
