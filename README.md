@@ -39,7 +39,7 @@ This will clone the repository and set up your new React app in the folder `<app
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/isurueranga-98/ireact
+   git clone https://github.com/isurueranga-98/ireact.git
    cd ireact
    ```
 
