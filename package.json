@@ -1,6 +1,6 @@
 {
-  "name": "ireactjs",
-  "version": "1.0.3",
+  "name": "ireactts",
+  "version": "1.0.0",
   "description": "A react app",
   "bin" : "./bin/cli.js",
   "scripts": {
