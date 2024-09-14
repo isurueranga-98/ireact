@@ -1,6 +1,6 @@
-# iReact
+# iReactApp
 
-`iReact` is a React application developed using TypeScript and styled with Tailwind CSS. The project is bundled using Parcel.
+`iReactApp` is a React application developed using TypeScript and styled with Tailwind CSS. The project is bundled using Parcel.
 
 ## Features
 
