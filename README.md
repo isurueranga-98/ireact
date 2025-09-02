@@ -1,117 +1,162 @@
-# iReactApp
+# iReactTS v2.0
 
-`iReactApp` is a React application developed using TypeScript and styled with Tailwind CSS. The project is bundled using Parcel.
+`iReactTS` is a modern React TypeScript starter template featuring **React 19**, **TypeScript 5**, and **Tailwind CSS 3**. Built with zero-configuration bundling using **Parcel**.
 
-## Features
+## ✨ Features
 
-- **React:** A popular JavaScript library for building user interfaces.
-- **TypeScript:** Provides static type checking for JavaScript.
-- **Tailwind CSS:** A utility-first CSS framework for styling.
-- **Parcel:** A fast, zero-configuration web application bundler.
+- **⚛️ React 19:** Latest React with new features and performance improvements
+- **📘 TypeScript 5:** Advanced type safety and modern JavaScript features
+- **🎨 Tailwind CSS 3:** Utility-first CSS framework with latest updates
+- **📦 Parcel 2:** Fast, zero-configuration web application bundler
+- **🔧 Modern Tooling:** ESLint-ready configuration and optimized build setup
+- **🚀 Performance:** Optimized for modern browsers with tree-shaking
 
-## Prerequisites
+## 🔧 Prerequisites
 
 Ensure that you have the following installed on your machine:
 
-- **Node.js:** [Download and install](https://nodejs.org/)
-- **npm:** Comes with Node.js, but you can verify it by running `npm -v` in your terminal.
+- **Node.js:** v18.0.0 or higher [Download and install](https://nodejs.org/)
+- **npm:** v8.0.0 or higher (comes with Node.js)
 
 Optional:
+- **Yarn:** [Install Yarn](https://yarnpkg.com/getting-started/install) if you prefer it over npm
 
-- **Yarn:** [Install Yarn](https://classic.yarnpkg.com/en/docs/install/) if you prefer it over npm.
+## 🚀 Quick Start
 
-## Installation
+### Using npx (Recommended)
 
-To get started with this project, follow these steps:
-
-## Using npx to Install the App
-
-You can also install the app globally using `npx` if it's been published to npm. Use the following command to scaffold a new app:
+Create a new React TypeScript app instantly:
 
 ```bash
 npx ireactts <app-name>
 ```
 
-This will clone the repository and set up your new React app in the folder `<app-name>`.
+This will:
+- Clone the latest template
+- Install all dependencies
+- Set up your new React app in the `<app-name>` folder
 
-## Using Github
+Example:
+```bash
+npx ireactts my-awesome-app
+cd my-awesome-app
+npm start
+```
+
+### Manual Installation
 
 1. **Clone the repository:**
-
    ```bash
    git clone https://github.com/isurueranga-98/ireact.git
    cd ireact
    ```
 
 2. **Install dependencies:**
-
-   After navigating into the project folder, install the necessary packages by running:
-
    ```bash
    npm install
    ```
 
-   Or, if you use Yarn:
+## 🎯 Available Scripts
 
-   ```bash
-   yarn install
-   ```
+- **`npm start`** - Start development server at `http://localhost:1234`
+- **`npm run build`** - Build for production (outputs to `dist/`)
+- **`npm run clean`** - Clean build artifacts and cache
 
-## Running the Application
-
-After the installation is complete, you can run the application in development mode:
-
-1. **Start the development server:**
-
-   ```bash
-   npm start
-   ```
-
-   Or with Yarn:
-
-   ```bash
-   yarn start
-   ```
-
-   This will open the app in your default browser at `http://localhost:1234/` using Parcel's development server.
-
-2. **Build for production:**
-
-   If you want to build the app for production, run the following command:
-
-   ```bash
-   npm run build
-   ```
-
-   Or with Yarn:
-
-   ```bash
-   yarn build
-   ```
-
-   The built version of the app will be available in the `dist` directory.
-
-## Folder Structure
-
-After installation, your project will look like this:
+## 📁 Project Structure
 
 ```
-ireact
-├── bin/                 # include cli.js
-├── node_modules/        # Installed npm packages
-├── public/              # Public assets
-├── src/                 # Source code (React components, styling, etc.)
-│   └── index.tsx        # Application entry point
-├── package.json         # Project configuration
-├── tsconfig.json        # TypeScript configuration
-├── tailwind.config.js   # Tailwind CSS configuration
-└── README.md            # This file
+ireact/
+├── 📁 bin/                     # CLI tools
+│   └── cli.js                  # NPX installation script
+├── 📁 public/                  # Static assets
+│   ├── favicon.ico            # App favicon
+│   └── index.html             # HTML template
+├── 📁 src/                     # Source code
+│   ├── App.tsx                # Main React component
+│   ├── index.tsx              # Application entry point
+│   ├── index.css              # Global styles with Tailwind
+│   └── ireact.svg             # App logo
+├── 📄 package.json            # Dependencies and scripts
+├── 📄 tsconfig.json           # TypeScript configuration
+├── 📄 tailwind.config.js      # Tailwind CSS configuration
+└── 📄 README.md               # This file
 ```
 
-## Contributing
+## 🎨 What's Included
 
-Contributions are welcome! Feel free to open a Pull Request or file an issue.
+### React 19 Features
+- **New JSX Transform:** Automatic runtime for cleaner imports
+- **Concurrent Features:** Improved performance and user experience
+- **Server Components Ready:** Prepared for future SSR implementations
 
-## License
+### TypeScript 5 Configuration
+- **Strict Mode:** Enhanced type checking for better code quality
+- **Modern Module Resolution:** Bundler-compatible configuration
+- **Path Mapping:** Clean import paths with `@/` alias
 
-This project is licensed under the ISC License.
+### Tailwind CSS 3
+- **Latest Utilities:** Access to newest design tokens and utilities
+- **Optimized Output:** Smaller bundle sizes with improved purging
+- **Modern Color Palette:** Updated color system and design tokens
+
+### Development Experience
+- **Hot Module Replacement:** Instant updates during development
+- **TypeScript Strict Mode:** Catch errors early with comprehensive type checking
+- **Modern Browser Support:** ES2022 target for optimal performance
+
+## 🌐 Browser Support
+
+- Chrome 88+
+- Firefox 85+
+- Safari 14+
+- Edge 88+
+
+## 📦 Deployment
+
+Build your app for production:
+
+```bash
+npm run build
+```
+
+The optimized build will be available in the `dist/` directory, ready for deployment to any static hosting service.
+
+### Popular Deployment Options
+- **Vercel:** `vercel --prod`
+- **Netlify:** Drag and drop `dist/` folder
+- **GitHub Pages:** Upload `dist/` contents
+- **AWS S3:** Sync `dist/` folder
+
+## 🔄 Version 2.0 Updates
+
+- ⬆️ **React 18 → 19:** Latest React with improved performance
+- ⬆️ **TypeScript 5.6 → 5.9:** Enhanced type system
+- ⬆️ **Tailwind CSS 3 → 4:** Modern utility classes and optimizations
+- ⬆️ **Parcel 2.12 → 2.15:** Improved build performance
+- 🔧 **Enhanced Configuration:** Optimized TypeScript and bundler settings
+- 📝 **Better Documentation:** Comprehensive setup and usage guide
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the ISC License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- React Team for the amazing framework
+- TypeScript Team for excellent tooling
+- Tailwind CSS for the utility-first approach
+- Parcel Team for zero-config bundling
+
+---
+
+**Happy coding! 🚀**
