@@ -2,11 +2,21 @@
   "name": "ireactts",
   "version": "2.0.0",
   "description": "A modern React TypeScript starter template with React 19, TypeScript 5, and Tailwind CSS",
-  "bin" : "./bin/cli.js",
-  "keywords": ["react", "typescript", "starter", "template", "react19", "tailwindcss", "parcel"],
+  "bin": {
+    "ireactts": "bin/cli.js"
+  },
+  "keywords": [
+    "react",
+    "typescript",
+    "starter",
+    "template",
+    "react19",
+    "tailwindcss",
+    "parcel"
+  ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/isurueranga-98/ireact.git"
+    "url": "git+https://github.com/isurueranga-98/ireact.git"
   },
   "scripts": {
     "test": "tsc --noEmit",
